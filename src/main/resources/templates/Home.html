@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" th:href="@{/css/bootstrap.min.css}" />
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-dark">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="navbar-brand" href="#">
+                    <img th:src="@{/images/V2Solutions.jpg}" width="30" height="30" alt="">
+                </a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link navbar-light" href="#">Link</a>
+            </li>
+        </ul>
+    </div>
+</nav>
+<br>
+<div class="container">
+    <div class="card" style="width: 38rem; padding:20px">
+        <h3 style="text-align:center">User Info</h3>
+        <form>
+        <div class="card-body">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">First</th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <th scope="row">Name</th>
+                    <td>Peter</td>
+                </tr>
+                <tr>
+                    <th scope="row">Age</th>
+                    <td>40</td>
+                </tr>
+                <tr>
+                    <th scope="row">Gender</th>
+                    <td>Male</td>
+                </tr>
+                <tr>
+                    <th scope="row">Profession</th>
+                    <td>Engineer</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+            <div class="container" style="text-align:center">
+            <button type="button" class="btn btn-primary">Add</button>
+            </div>
+        </form>
+    </div>
+
+</div>
+</body>
+</html>
